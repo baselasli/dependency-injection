@@ -22,7 +22,7 @@ namespace First_Traning.Controllers
         }
 
         [HttpPost]
-        public void addUser( Users user)
+        public void addUser([FromBody] Users user)
         {
             FirstUser.addUser(user);
         }
